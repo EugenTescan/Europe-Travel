@@ -1,0 +1,393 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.hero {
+    background-image: url(/images/destinatii_alt.jpg) ;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+}
+
+.hero-text {
+    padding: 80px;
+}
+
+.hero-text h2{
+    max-width: 900px;
+    text-align: left;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.hero-text p{
+    max-width: 900px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.article-section {
+    background-color: azure;    
+}
+
+.article-title {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.3s linear;
+    display: flex;
+    width: 1600px;
+}
+
+.article-title img {
+    width: 50%;
+    margin: auto 0;
+    border-radius: 20px 0 0 20px;
+    border: 2px solid black;
+}
+
+.article-title:hover {
+    transform: scale(0.9);
+
+}
+
+.article-text {
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    margin-left: 5px;
+}
+
+.article-text h2 {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.article-text p {
+    padding: 50px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@media (max-width: 1600px) {
+    .hero-text {
+        padding: 80px;
+    }
+    
+    .hero-text h2{
+        max-width: 800px;
+        font-size: 50px;
+    }
+    
+    .hero-text p{
+        max-width: 800px;
+    }
+
+    .article-title {
+        width: 1280px;
+    }
+ 
+    .article-text h2 {
+        font-size: 34px;
+    }
+    
+    .article-text p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero-text {
+        padding: 80px;
+    }
+    
+    .hero-text h2{
+        max-width: 700px;
+        font-size: 50px;
+    }
+    
+    .hero-text p{
+        max-width: 700px;
+    }
+    
+    .article-title {
+        width: 1200px;
+    }
+    
+    .article-text h2 {
+        padding-top: 80px;
+    }
+    
+    .article-text p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero-text {
+        padding: 80px;
+    }
+    
+    .hero-text h2{
+        max-width: 650px;
+        font-size: 40px;
+    }
+    
+    .hero-text p{
+        max-width: 650px;
+    }
+    
+    .article-title {
+        width: 1000px;
+    }
+    
+    .article-text h2 {
+        padding-top: 50px;
+    }
+    
+    .article-text p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-text {
+        padding: 50px;
+    }
+    
+    .hero-text h2 {
+        max-width: 600px;
+        font-size: 38px;
+    }
+    
+    .hero-text p{
+        max-width: 600px;
+    }
+    
+    .article-title {
+        width: 800px;
+    }
+    
+    .article-text h2 {
+        padding-top: 10px;
+    }
+    
+    .article-text p {
+        padding: 20px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        padding: 20px;
+    }
+    
+    .hero-text h2 {
+        width: 460px;
+        font-size: 30px;
+    }
+    
+    .hero-text p{
+        width: 460px;
+        font-size: 20px;
+    }
+    
+    .article-title {
+        width: 640px;
+        padding: 20px;
+        display: block;
+    }
+    
+    .article-title img {
+        width: 640px;
+        border-radius: 20px 20px 0 0;
+        border: 2px solid black;
+        margin-bottom: -6px;
+    }
+        
+    .article-text {
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 0 0 20px 20px;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .article-text h2 {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+    .article-text p {
+        padding-top: 20px;
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-text {
+        padding: 20px;
+    }
+    
+    .hero-text h2 {
+        width: 420px;
+        font-size: 28px;
+    }
+    
+    .hero-text p{
+        width: 420px;
+        font-size: 20px;
+    }
+    
+    .article-title {
+        width: 600px;
+        padding: 10px;
+        display: block;
+    }
+    
+    .article-title img {
+        width: 600px;
+        margin-bottom: -5px;
+    }
+    
+    .article-text h2 {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+    .article-text p {
+        padding-top: 20px;
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        padding: 20px;
+    }
+    
+    .hero-text h2 {
+        text-align: center;
+        width: 420px;
+        font-size: 28px;
+    }
+    
+    .hero-text p{
+        text-align: center;
+        width: 420px;
+        font-size: 20px;
+    }
+    
+    .article-title {
+        width: 400px;
+        padding: 10px;
+    }
+    
+    .article-title img {
+        width: 400px;
+        margin-bottom: -5px;
+    }
+    
+    .article-text h2 {
+        padding-top: 20px;
+        font-size: 26px;
+    }
+
+    .article-text p {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-text {
+        padding: 10px;
+    }
+    .hero-text h2 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .hero-text p{
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .article-title {
+        width: 320px;
+        padding: 10px;     
+    }
+    
+    .article-title img {
+        width: 320px;
+        border: 1px solid black;
+    }
+        
+    .article-text {
+        border: 1px solid black;        
+    }
+    
+    .article-text h2 {
+        padding-top: 10px;
+        font-size: 24px;
+    }
+
+    .article-text p {
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 240px) {
+    .hero-text {
+        padding: 5px;
+    }
+    .hero-text h2 {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .hero-text p{
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .article-title {
+        width: 220px;
+        padding: 10px;     
+    }
+    
+    .article-title img {
+        width: 220px;
+        border: 1px solid black;
+    }
+        
+    .article-text {
+        border: 1px solid black;        
+    }
+    
+    .article-text h2 {
+        padding-top: 5px;
+        font-size: 22px;
+    }
+
+    .article-text p {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+}

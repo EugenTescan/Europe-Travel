@@ -1,0 +1,1594 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.hero {
+    background-image: url(/images/hero-image-sea.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text {
+    max-width: 1600px;
+    padding: 100px 0 0 200px;
+    text-align: right;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero-text p{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hero-btn-mobile {
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    transition: ease;
+    display: none;
+}
+
+.hero-btn-mobile:hover {
+    border: 2px solid #BE4D23;
+    border-radius: 20px 20px 0px 20px;
+    color: #BE4D23;
+    background-color: black;
+}
+
+.hero-btn {
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    transition: ease;
+}
+
+.hero-btn:hover {
+    border: 2px solid #BE4D23;
+    border-radius: 20px 20px 0px 20px;
+    color: #BE4D23;
+    background-color: black;
+}
+
+.destination-section {
+    background-color: azure;
+    padding-bottom: 50px;
+}
+
+.destination {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+#destination-title {
+    text-align: center;
+    padding: 100px 30px 10px 30px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#destination-title-text {
+    text-align: center;
+    padding: 20px 100px 50px 100px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.destination-card {
+    max-width: 520px;
+    border-radius: 10px;
+    border: 2px solid #BE4D23;
+    height: 480px;
+    overflow: hidden;
+}
+
+.destination-card img{
+    margin: 10px;
+    width: 460px;
+    max-height: 260px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;    
+}
+
+.destination-card:hover img{
+    transform: scale(1.1);
+}
+
+.destination-card h3{
+    padding: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.destination-card p{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.destination-btn {
+    margin: 0 auto;
+    max-width: 30%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+    opacity: 1;
+}
+
+.destination-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+#tips-title {
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#tips-title-text {
+    text-align: center;
+    padding: 20px 100px 50px 100px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.tips {
+    margin: 0 100px;
+    position: relative;
+}
+
+.tips-boxes img {
+    width: 1440px;
+}
+
+.tips-boxes {
+    text-align: center;
+    display: none;
+}
+
+.tips-boxes.active {
+    display: block;
+}
+
+.tips-box {
+    padding: 0px;
+}
+
+.tips-box h3 {
+    padding: 20px;
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tips-box p {
+    padding: 15px 100px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#tips-btn {
+    margin: 50px auto 80px auto;
+    max-width: 30%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#tips-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+  
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+    font-size: 60px;
+    font-weight: 600;
+}
+  
+.prev-arrow {
+    left: 80px;
+}
+  
+.next-arrow {
+    right: 80px;
+}
+
+#about-title {
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-section {
+    background-color: #e3f7cd;
+}
+
+.about {
+    max-height: 600px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-image img{
+    width: 1000px;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h3 {
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about-text p {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#about-btn {
+    margin: 20px auto;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#about-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.blog {
+    background-color: azure;
+    padding: 50px 0;
+}
+
+.blog h2{
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog h3{
+    text-align: center;
+    padding: 20px 100px 50px 100px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.blog-post {
+    width: 800px;
+    padding: 20px;
+}
+
+.blog-post img {
+    width: 700px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blog-post-text {
+    margin: 50px;
+}
+
+.blog-post-text h4 {
+    background-color: turquoise;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.blog-post-text p {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-post-text a {
+    text-align: center;
+    padding: 5px 20px;
+    border: 1px solid #BE4D23;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-post-text a:hover {
+    background-color: turquoise;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#blog-btn {
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#blog-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+@media (max-width: 1600px) {        
+    .hero-text {
+        max-width: 1280px;
+        padding: 100px 0 0 200px;
+        text-align: right;
+    }
+        
+    .hero-text p{
+        font-size: 32px;
+    }
+           
+    .hero-btn {
+        font-size: 32px;
+    }   
+   
+    .destination {
+        gap: 20px;
+    }
+    
+    #destination-title {
+        font-size: 32px;
+    }
+    
+    #destination-title-text {
+        font-size: 24px;
+    }
+    
+    .destination-card {
+        width: 480px;
+    }
+
+    .destination-card img{
+        width: 440px;
+    }
+        
+    .destination-card p{
+        font-size: 20px;
+    }       
+        
+    .tips {
+        margin: 0 80px;
+    }
+    
+    .tips-boxes img {
+        width: 1200px;
+    }
+    
+   
+    .tips-box h3 {
+        font-size: 36px;
+    }
+    
+    .tips-box p {
+        font-weight: 400;
+    }
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 50px;
+    }          
+    
+    .about-image img{
+        width: 1000px;
+    }
+
+    .blog {
+        padding: 20px 0;
+    }
+
+    .blog-post {
+        width: 640px;
+    }
+    
+    .blog-post img {
+        width: 520px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .hero-text {
+        max-width: 1280px;
+        padding: 100px;
+    }
+    
+    .hero-text h1{
+        font-size: 50px;
+    }
+    
+    .hero-text p{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .hero-btn {
+        font-size: 30px;       
+    }
+    
+    .destination-card {
+        max-width: 400px;
+    }
+    
+    .destination-card img{
+        width: 380px;
+    }
+    
+    .tips-boxes img {
+        width: 1000px;
+    }
+          
+   
+    .about-image img{
+        width: 800px;
+    }  
+}
+
+@media (max-width: 1280px) {    
+    .hero-text {
+        max-width: 1000px;
+        padding: 100px;
+        text-align: left;
+    }
+    
+    .hero-text h1{
+        font-size: 48px;
+    }
+    
+    .hero-text p{
+        font-size: 28px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 28px;       
+    }
+    
+    .destination {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #destination-title {
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    #destination-title-text {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    
+    .destination-card {
+        max-width: 380px;
+        height: 440px;
+    }
+    
+    .destination-card img{
+        width: 360px;
+        max-height: 260px;
+    }
+    
+    .destination-card h3{
+        font-size: 28px;
+    }
+    
+    .destination-card p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    #tips-title {       
+        font-size: 32px;
+    }
+    
+    #tips-title-text {
+        font-size: 22px;
+    }
+    
+    .tips {
+        margin: 0 50px;
+    }
+    
+    .tips-boxes img {
+        width: 960px;
+    }
+    
+    .tips-box h3 {
+        font-size: 30px;
+    }
+    
+    .tips-box p {
+        padding: 15px 80px;
+        font-size: 22px;
+        font-weight: 400;
+    }     
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 46px;
+    }
+          
+    #about-title {
+        font-size: 32px;
+    }
+    
+    .about {
+        padding: 10px;
+    }
+    
+    .about-image img{
+        width: 640px;
+    }
+    
+    .about-text h3 {
+        padding: 5px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    
+    .about-text p {
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+   
+    .blog h2{
+        font-size: 32px;
+    }
+    
+    .blog h3{
+        font-size: 24px;
+    }
+        
+    .blog-post {
+        width: 600px;
+    }
+    
+    .blog-post img {
+        width: 480px;
+    }
+        
+    .blog-post-text h4 {
+        font-size: 22px;
+    }
+    
+    .blog-post-text p {
+        padding: 20px;
+        font-size: 18px;
+    }    
+}
+
+@media (max-width: 1024px) {    
+    .hero-text {
+        max-width: 960px;
+        padding: 80px;
+        text-align: left;
+    }
+    
+    .hero-text h1{
+        font-size: 42px;
+    }
+    
+    .hero-text p{
+        font-size: 24px;
+    }
+    
+    .hero-btn {
+        font-size: 22px;       
+    }
+    
+    .destination {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #destination-title {
+        font-size: 30px;
+    }
+    
+    #destination-title-text {
+        font-size: 20px;
+    }
+    
+    .destination-card {
+        max-width: 440px;
+        height: 450px;
+    }
+    
+    .destination-card img{
+        width: 420px;
+    }
+    
+    #tips-title {       
+        font-size: 30px;
+    }
+    
+    #tips-title-text {
+        font-size: 20px;
+    }
+    
+    .tips {
+        margin: 0 20px;
+    }
+    
+    .tips-boxes img {
+        width: 760px;
+    }
+    
+    .tips-box h3 {
+        font-size: 28px;
+    }
+    
+    .tips-box p {
+        padding: 10px 50px;
+        font-size: 20px;
+    }     
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 36px;
+    }
+          
+    #about-title {
+        font-size: 30px;
+    }
+        
+    .about-image img{
+        width: 460px;
+    }
+    
+    .about-text h3 {
+        font-size: 24px;
+    }
+    
+    .about-text p {
+        padding: 5px;
+        font-size: 20px;
+    }    
+   
+    .blog h2{
+        font-size: 30px;
+    }
+    
+    .blog h3{
+        font-size: 22px;
+    }
+        
+    .blog-post {
+        width: 480px;
+    }
+    
+    .blog-post img {
+        width: 400px;
+    }
+        
+    .blog-post-text h4 {
+        font-size: 20px;
+    }          
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-image: url(/images/hero-image-sea-mobile.jpg);
+        height: fit-content;
+    }
+
+    .hero-text {
+        max-width: 640px;
+        padding: 50px;
+    }
+    
+    .hero-text h1{
+        font-size: 38px;
+    }
+    
+    .hero-text p{
+        font-size: 28px;
+    }
+    
+    .hero-btn {
+        font-size: 26px;       
+    }
+    
+    #destination-title {
+        font-size: 38px;
+    }
+    
+    #destination-title-text {
+        padding: 20px 50px 30px 50px;
+        font-size: 26px;
+        font-weight: 400;
+    }
+    
+    .destination-card {
+        max-width: 320px;
+        height: 520px;
+    }
+    
+    .destination-card img{
+        margin: 10px;
+        width: 300px;
+    }
+    
+    .destination-card h3{
+        padding: 10px;
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .destination-card p{
+        padding: 5px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    
+    .destination-btn {
+        max-width: 50%;
+    }
+    
+    #tips-title {       
+        font-size: 32px;
+    }
+    
+    #tips-title-text {
+        font-size: 24px;
+    }
+    
+    .tips-boxes img {
+        width: 520px;
+    }
+    
+    .tips-box h3 {
+        font-size: 30px;
+    }
+    
+    .tips-box p {
+        padding: 10px 50px;
+        font-size: 22px;
+    }     
+    
+    .prev-arrow,
+    .next-arrow {
+        top: 25%;
+    }
+
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 36px;
+    }
+     
+    .about {
+        max-height: 800px;
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #about-title {
+        font-size: 32px;
+    }
+        
+    .about-image img{
+        width: 640px;
+    }
+    
+    .about-text h3 {
+        font-size: 26px;
+    }
+    
+    .about-text p {
+        padding: 5px;
+        font-size: 22px;
+    }    
+
+    .blog-posts {
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .blog h2{
+        font-size: 32px;
+    }
+    
+    .blog h3{
+        font-size: 22px;
+    }
+        
+    .blog-post {
+        margin: 0 auto;
+        width: 720px;
+    }
+    
+    .blog-post img {
+        width: 640px;
+    }
+        
+    .blog-post-text h4 {
+        font-size: 20px;
+    }          
+}
+
+@media (max-width: 640px) {
+       .hero-text {
+        max-width: 560px;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .hero-text h1{
+        font-size: 48px;
+        font-weight: 500;
+    }
+    
+    .hero-text p{
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }    
+
+    .hero-btn {
+        display: none;
+    }
+
+    .hero-btn-mobile {
+        display: initial;
+        padding: 10px 5px;
+        font-size: 22px;
+    }
+        
+    .destination {
+        display: block;
+        padding: 50px;
+    }
+    
+    #destination-title {
+        text-align: center;
+        padding: 50px 30px;
+        font-weight: 500;
+    }
+    
+    #destination-title-text {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .destination-card {
+        max-width: 480px;
+        height: 520px;
+        margin: 0 auto 30px auto;
+    }
+    
+    .destination-card img{
+        margin: 10px;
+        width: 460px;
+    }
+    
+    .destination-btn {
+        max-width: 60%;
+        padding: 10px 0;
+    }
+        
+    #tips-title {
+        padding: 50px 1px;
+        font-size: 32px;
+    }
+     
+    #tips-title-text {
+        padding: 10px;
+        font-size: 22px;
+    }
+
+    .tips-boxes img {
+        width: 520px;
+    }
+    
+    .tips-boxes {
+        height: 800px;
+        display: none;
+    }
+        
+    .tips-box {
+        padding: 5px;
+    }
+    
+    .tips-box h3 {
+        font-size: 28px;
+    }
+    
+    .tips-box p {
+        margin-bottom: 10px;
+    }
+    
+    #tips-btn {
+        margin: 30px auto;
+        max-width: 60%;
+    }
+          
+    .prev-arrow,
+    .next-arrow {
+        top: 20%;
+    }
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 40px;
+    }
+    
+    #about-title {
+        padding: 50px 10px;
+        font-size: 32px;
+    }
+        
+    .about {
+        max-height: 1000px;
+        display: block;
+        padding: 10px;
+    }
+    
+    .about-image img{
+        width: 520px;
+    }
+    
+    .about-text {
+        padding: 5px;
+    }
+    
+    .about-text h3 {
+        font-size: 24px;
+    }
+    
+    #about-btn {
+        max-width: 60%;
+    }
+    
+    .blog h2{
+        font-size: 32px;
+    }
+
+    .blog h3{
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .blog-post {
+        padding: 5px;
+        margin: 0 auto;
+        width: 500px;
+
+    }
+    
+    .blog-post img {
+        width: 480px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .blog-post-text {
+        margin: 10px;
+    }
+    
+    .blog-post-text p {
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    #blog-btn {        
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {   
+    .hero-text {
+        margin: 0 auto;
+        max-width: 420px;
+        padding: 50px 10px;
+        text-align: center;
+    }
+    
+    .hero-text h1{
+        font-size: 38px;
+        font-weight: 500;
+    }
+    
+    .hero-text p{
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        padding: 20px 10px;
+    }    
+
+    .hero-btn {
+        display: none;
+    }
+
+    .hero-btn-mobile {
+        display: initial;
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+        
+    .destination {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    #destination-title {
+        padding: 30px;
+        font-size: 28px;
+    }
+
+    #destination-title-text {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .destination-card {
+        width: 460px;
+    }
+        
+    .destination-card img{
+        margin: 5px;
+        width: 90%;
+    }
+    
+    .destination-card h2{
+        font-size: 28px;
+    }
+        
+    .destination-btn {
+        max-width: 90%;
+    }
+    
+    #tips-title {
+        padding: 30px 10px;
+        font-size: 30px;
+    }
+
+    #tips-title-text {
+        padding: 10px;
+        font-size: 20px;
+    }
+           
+    .tips-boxes img {
+        width: 360px;
+    }
+    
+    .tips-boxes {
+        height: 600px;
+    }
+        
+    .tips-box h3 {
+        font-size: 26px;
+    }
+    
+    .tips-box p {
+        margin: 0;
+        padding: 10px;        
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    #tips-btn {
+        margin: 130px auto 30px auto;
+        max-width: 80%;
+    }
+          
+    .prev-arrow,
+    .next-arrow {
+        top: 16%;
+    }
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 38px;
+        font-weight: 600;
+    }
+      
+    #about-title {
+        padding: 30px 10px;
+    }
+        
+    .about {
+        max-height: 1000px;
+    }
+    
+    .about-image img{
+        width: 380px;
+    }
+       
+    .blog h2{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .blog h3{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .blog-post {
+        width: 360px;
+        padding: 20px 10px;
+    }
+
+    .blog-post img {
+        width: 360px;
+    }
+    
+    .blog-post-text {
+        margin: 0;
+    }
+    
+    .blog-post-text h4 {
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .blog-post-text p {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    
+    #blog-btn {        
+        max-width: 80%;
+    }    
+}
+
+@media (max-width: 360px) {
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-text {
+        max-width: 340px;
+        padding: 20px 5px;
+    }
+    
+    .hero-text h1{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    
+    .hero-text p{
+        font-size: 20px;
+        padding: 20px 5px;
+        margin: 0;
+    }
+    
+    .hero-text p span{
+        display: none;
+    }
+
+    .hero-btn-mobile {
+        padding: 5px 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        display: initial;
+    }
+    
+    .hero-btn-mobile:hover {
+        border: 2px solid #BE4D23;
+        border-radius: 20px 20px 0px 20px;
+        color: #BE4D23;
+        background-color: black;
+    }
+    
+    .hero-btn {
+        display: none;
+    }
+        
+    .destination {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    
+    #destination-title {
+        padding: 30px 10px;
+        font-size: 28px;
+    }
+
+    .destination-card {
+        width: 90%;
+        height: fit-content;
+    }
+        
+    .destination-card img{
+        margin: 5px;
+        width: 90%;
+    }
+    
+    .destination-card h3{
+        font-size: 28px;
+    }
+
+    .destination-card p{
+        font-size: 20px;
+    }
+        
+    .destination-btn {
+        max-width: 90%;
+    }
+    
+    #tips-title {
+        padding: 50px 10px;
+        font-size: 28px;
+    }    
+
+    #tips-title-text {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .tips {
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .tips-boxes img {
+        width: 80%;
+    }
+    
+    .tips-boxes {
+        text-align: center;
+        height: fit-content;
+        display: none;
+    }
+        
+    .tips-box {
+        padding: 5px;
+    }
+    
+    .tips-box h3 {
+        padding: 20px 0;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .tips-box p {
+        padding: 15px 5px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    
+    #tips-btn {
+        margin: 30px auto 30px auto;
+        max-width: 80%;
+    }
+          
+    .prev-arrow,
+    .next-arrow {
+        top: 80px;
+    }
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 38px;
+    }
+      
+    .prev-arrow {
+        left: 10px;
+    }
+      
+    .next-arrow {
+        right: 10px;
+    }
+    
+    #about-title {
+        padding: 30px 15px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+        
+    .about {
+        height: fit-content;
+    }
+    
+    .about-image img{
+        width: 280px;
+    }
+    
+    .about-text h3 {
+        padding: 5px 0;
+        font-size: 22px;
+    }
+    
+    .about-text p {
+        padding: 5px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    #about-btn {
+        max-width: 90%;
+    }
+    
+    .blog h3{
+        text-align: center;
+        padding: 30px 10px;
+        font-size: 22px;
+    }
+
+    .blog-post {
+        width: 300px;
+        padding: 10px 5px;
+    }
+    
+    .blog-post img {
+        width: 280px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .blog-post-text {
+        margin: 10px;
+    }
+    
+    .blog-post-text h4 {
+        font-size: 20px;
+    }
+    
+    .blog-post-text p {
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    #blog-btn {        
+        max-width: 80%;
+    }    
+}
+@media (max-width: 240px) {
+    .hero {
+        height: fit-content;
+    }
+    
+    .hero-text {
+        max-width: 240px;
+        padding: 10px 1px;
+    }
+    
+    .hero-text h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    .hero-text p{
+        font-size: 20px;
+        padding: 5px 2px;
+    }
+    
+    .hero-btn-mobile {
+        padding: 5px 5px;
+        border-radius: 5px;
+        font-size: 14px;        
+    }
+    
+    .hero-btn-mobile:hover {
+        border-radius: 10px 10px 0px 10px;
+    }
+     
+    .destination {
+        padding: 8px;
+    }
+    
+    #destination-title {
+        padding: 15px 5px;
+        font-size: 26px;
+    }
+
+    #destination-title-text {
+        font-size: 18px;
+    }
+
+    .destination-card {
+        width: 100%;
+    }
+        
+    .destination-card img{
+        margin: 5px;
+        width: 95%;
+    }
+    
+    .destination-card h3{
+        font-size: 24px;
+    }
+
+    .destination-card p{
+        font-size: 16px;
+    }
+        
+    .destination-btn {
+        max-width: 80%;
+        font-size: 18px;
+    }
+    
+    #tips-title {
+        padding: 30px 6px;
+        font-size: 26px;
+    }    
+
+    .tips-boxes img {
+        width: 70%;
+    }
+    
+    .tips-box h3 {
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .tips-box p {
+        padding: 10px 5px;
+    }
+    
+    #tips-btn {
+        margin: 10px auto ;
+        max-width: 90%;
+        font-size: 20px;
+    }
+          
+    .prev-arrow,
+    .next-arrow {
+        top: 46px;
+    }
+    
+    .prev-arrow:hover,
+    .next-arrow:hover {
+        font-size: 36px;
+    }
+      
+    #about-title {
+        padding: 20px 5px;
+        font-size: 24px;
+    }
+    .about-image img{
+        width: 200px;
+    }
+    
+    .about-text h3 {
+        padding: 5px 0;
+        font-size: 20px;
+    }
+    
+    .about-text p {
+        font-size: 18px;
+    }
+    
+    #about-btn {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    
+    .blog h2{
+        padding: 20px 6px;
+        font-size: 24px;
+    }
+
+    .blog h3{
+        padding: 10px 2px;
+        font-size: 20px;
+    }
+
+    .blog-post {
+        width: 220px;
+        padding: 5px 0;
+    }
+    
+    .blog-post img {
+        width: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .blog-post-text {
+        margin: 10px;
+    }
+    
+    .blog-post-text h4 {
+        font-size: 16px;
+    }
+    
+    .blog-post-text p {
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    #blog-btn {        
+        max-width: 80%;
+        font-size: 18px;
+    }    
+}

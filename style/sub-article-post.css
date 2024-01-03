@@ -1,0 +1,325 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.hero {
+    background-image: url(/images/blog.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 800px;
+}
+
+.hero-text {
+    max-width: 800px;
+    padding: 100px 0 50px 500px;
+    text-align: right;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #000;
+    color: turquoise;
+}
+
+.hero-text p{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    -webkit-text-stroke: 1px #000;
+    color: turquoise;
+}
+
+.blog {
+    background-color: azure;
+    padding: 20px 0;
+}
+
+.blog h3{
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-posts {
+    text-align: center;
+    align-items: center;
+}
+
+.blog-post img {
+    max-width: 1000px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blog-post-text {
+    margin: 5% auto;
+    width: 70%;
+}
+
+.blog-post-text h4 {
+    background-color: turquoise;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+
+.blog-post-text p {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-post-text a {
+    text-align: center;
+    padding: 5px 20px;
+    border: 1px solid #BE4D23;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-post-text a:hover {
+    background-color: turquoise;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#blog-btn {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#blog-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    
+.hero {
+    background-image: url(/images/blog.jpg) ;
+    max-height: 800px;
+}
+
+.blog {
+    background-color: azure;
+    padding: 20px 0;
+}
+
+.blog h3{
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-posts {
+    text-align: center;
+    align-items: center;
+}
+
+.blog-post img {
+    max-width: 1000px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blog-post-text {
+    margin: 5% auto;
+    width: 70%;
+}
+
+.blog-post-text h4 {
+    background-color: turquoise;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+
+.blog-post-text p {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-post-text a {
+    text-align: center;
+    padding: 5px 20px;
+    border: 1px solid #BE4D23;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-post-text a:hover {
+    background-color: turquoise;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#blog-btn {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#blog-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+}
+
+@media (max-width: 360px) {
+    
+.hero {
+    background-image: url(/images/blog.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 800px;
+}
+
+.hero-text {
+    max-width: 800px;
+    padding: 100px 0 50px 500px;
+    text-align: right;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #000;
+    color: turquoise;
+}
+
+.hero-text p{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    -webkit-text-stroke: 1px #000;
+    color: turquoise;
+}
+
+.blog {
+    background-color: azure;
+    padding: 20px 0;
+}
+
+.blog h3{
+    text-align: center;
+    padding: 100px 50px 50px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-posts {
+    text-align: center;
+    align-items: center;
+}
+
+.blog-post img {
+    max-width: 1000px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blog-post-text {
+    margin: 5% auto;
+    width: 70%;
+}
+
+.blog-post-text h4 {
+    background-color: turquoise;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+
+.blog-post-text p {
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-post-text a {
+    text-align: center;
+    padding: 5px 20px;
+    border: 1px solid #BE4D23;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.blog-post-text a:hover {
+    background-color: turquoise;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#blog-btn {
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    max-width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #BE4D23;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: ease;
+}
+
+#blog-btn:hover {
+    background-color: #BE4D23;
+    cursor: pointer;
+    border: 1px solid black;
+}
+}

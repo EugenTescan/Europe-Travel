@@ -1,0 +1,61 @@
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect www to non-www and from HTTP to HTTPS
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_HOST} ^www\.europetravel\.ro [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://europetravel.ro/$1 [L,R=301]
+</IfModule>
+
+# Activare compresie GZIP
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Prevenire listare director
+Options -Indexes
+
+# Prevenire atacuri CSRF
+<IfModule mod_headers.c>
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Prevenire atacuri XSS și setare Content Security Policy
+<IfModule mod_headers.c>
+  Header set X-XSS-Protection "1; mode=block"
+  Header always append X-Frame-Options SAMEORIGIN
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+</IfModule>
+
+# Set timezone
+SetEnv TZ Europe/Bucharest
+
+# Control caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 week"
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+   <FilesMatch "\.(jpg|jpeg|png|gif|js|css)$">
+      Header set Cache-Control "max-age=3600, public"
+   </FilesMatch>
+</IfModule>
+
+<IfModule mod_headers.c>
+   Header set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+</IfModule>
+
+Header set X-Content-Type-Options "nosniff"
